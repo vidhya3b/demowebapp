@@ -14,7 +14,7 @@ provider "aws" {
 resource "aws_instance" "Vidinfra" {
     ami = "ami-04902260ca3d33422"
     instance_type = "t2.micro"
-    count = 3
+    count = 2
     tags = {
     Name = "vidhya-${count.index}"
   }
